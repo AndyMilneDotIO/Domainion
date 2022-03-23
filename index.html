@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stuck for a domain name? Let Domainion pick one!">
+    <meta name="image" content="http://domainion.co/inc/logo.png">
+    <meta name="keywords" content="Free, Domain, Generator">
+    <meta name="author" content="Andy Milne">
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="http://domainion.co"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AndyMilneDotIO">
+    <meta name="twitter:title" content="Domainion - Domain Name Generator">
+    <meta name="twitter:description" content="Stuck for a domain name? Let Domainion pick one!">
+    <meta name="twitter:creator" content="@AndyMilneDotIO">
+    <meta name="twitter:image:src" content="http://domainion.co/inc/summary.png">
+    <meta property="og:title" content="Domainion" />
+    <meta property="og:type" content="application" />
+    <meta property="og:url" content="http://domainion.co" />
+    <meta property="og:image" content="http://domainion.co/inc/summary.png" />
+    <meta property="og:description" content="Stuck for a domain name? Let Domainion pick one!" />
+    <meta property="og:site_name" content="Domainion" />
+    <meta property="article:published_time" content="2022-03-22T22:00:00" />
+    <meta property="article:modified_time" content="2022-03-22T22:00:00" />
+
+    <title>Domainion - Domain Name Generator</title>
+    <script src="inc/main.js"></script>
+    <link rel="stylesheet" href="inc/style.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <img class="logo" src="inc/logo.png" alt="Domainion Logo">
+        <span class="tag">Stuck for a domain name?<br>Let Domainion pick one!</span>
+    </nav>
+    
+    <article id="domain">
+        <div class="container">
+        <span id="help">
+            <span id="helpButton">?</span>
+            <span id="helpDisplay">Not keen? Generate a new one, or edit this one and click Update!</span>
+        </span>
+        <span>
+            <p class="title">Your new domain is:</p>
+            <input type="text" id="newDomain" name="newDomain" maxlength="32" autocomplete="off">
+            <span class="actions">
+                <button id="checkDomain">Update</button>
+                <button id="copyDomain">Copy Link</button>
+            </span>
+        </span>
+        <span id="status"></span>
+        </div>
+    </article>
+    <article id="new">
+    <form>
+        <div class="container">
+        <h3>Generate a new Domain</h3>
+        <p>Domainion will generate a new, valid, and available domain for you, based on a few simple options</p>
+        <span class="formFields">
+            <label for="numWords">Number of Words</label>
+            <span class="selection">
+                <div class="words miniButton active" value="1">1</div>
+                <div class="words miniButton" value="2">2</div>
+                <div class="words miniButton" value="3">3</div>
+                <div class="words miniButton" value="4">4</div>
+                <div class="words miniButton" value="5">5</div>
+            </span>
+        </span>
+        <span class="formFields">
+            <label for="wordSpacer">Spacer</label>
+            <span class="selection">
+                <div class="space miniButton active" value="">none</div>
+                <div class="space miniButton" value="-">-</div>
+                <div class="space miniButton" value="and">and</div>
+                <div class="space miniButton" value="-and-">-and-</div>
+            </span>
+        </span>
+        <span class="formFields">
+            <label for="removeVowels">Remove Vowels</label>
+            <span class="selection">
+                <div class="vowels miniButton" value="">&nbsp;</div>
+            </span>
+        </span>
+        <span class="formFields">
+            <label for="tld">Domain Suffix (TLD)</label>
+            <span class="selection">
+            <select id="tld" name="tld">
+                <option id="0" name="random" value="random">Random</option>
+            </select>
+        </span>
+        </span>
+        <span class="actions">
+            <button id="getNewDomain">Generate New Domain</button>
+        </span>
+    </div>
+    </form>
+</article>
+    <article id="about">
+        <div class="container">
+        <h3>How does it work?</h3>
+        <p>Domainion.co uses the <a href="https://whois.whoisxmlapi.com/" target="_blank">WhoIsXMLAPI</a>. Once a random word or group of words are generated, Domainion builds a domain name, and checks the WhoIsXMLAPI to make sure the domain name is available. If it's not, Domainion will generate a new domain name and try again, until an available domain name is found.</p>
+        <p>If you, the user, inputs your own domain, Domainion will use the WhoIsXMLAPI to check it's availability. Domainion will then tell you whether the domain is available or not.</p>
+    </div>
+    </article>
+    <footer>
+        <p>Any questions? Email <a class="brand-link" href="mailto:info@domainion.co">info@domainion.co</a></p>
+        <p>&copy; 2022 AndyMilne.IO All Rights Reserved</p>
+        <span class="actions">
+            <a href="https://www.buymeacoffee.com/andymilnedotio" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+        </span>
+    </footer>
+</body>
+</html>
